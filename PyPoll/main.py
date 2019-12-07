@@ -2,7 +2,7 @@ import os
 import csv
 
 # Path to collect data from the Resources folder
-pool_csv = os.path.join('Resources', 'election_data.csv')
+pool_csv = os.path.join('', 'election_data.csv')
 
 # Read in the CSV file
 with open(pool_csv, 'r') as csvfile:
@@ -56,7 +56,7 @@ with open(output_path, 'w', newline='') as txtfile:
     -------------------------
     """))
     for name, votes in tracker.items():
-        txtfile.write(str(f'{name}: {"{:.3f}".format((votes/total_votes)*100)}% ({votes}})\n    '))
+        txtfile.write(str(f'{name}: {"{:.3f}".format((votes/total_votes)*100)}% ({votes})\n    '))
 
     txtfile.write(str(f"""
     -------------------------

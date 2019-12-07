@@ -6,7 +6,7 @@ import csv
 #def print_records():
 
 # Path to collect data from the Resources folder
-bank_csv = os.path.join('Resources', 'budget_data.csv')
+bank_csv = os.path.join('', 'budget_data.csv')
 
 # Read in the CSV file
 with open(bank_csv, 'r') as csvfile:
