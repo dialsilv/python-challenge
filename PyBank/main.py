@@ -2,10 +2,7 @@ import os
 import csv
 
 
-# Define the function and have it accept the 'records' as its sole parameter
-#def print_records():
-
-# Path to collect data from the Resources folder
+# Path to collect input data
 bank_csv = os.path.join('', 'budget_data.csv')
 
 # Read in the CSV file
@@ -84,8 +81,6 @@ with open(output_path, 'w', newline='') as txtfile:
         Greatest Increase in Profits: {greatest_increase_month} (${greatest_increase_value})
         Greatest Decrease in Profits: {greatest_decrease_month} (${greatest_decrease_value})
         """))
-
-
 
     # close txtfile
     txtfile.close()

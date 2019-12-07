@@ -1,7 +1,7 @@
 import os
 import csv
 
-# Path to collect data from the Resources folder
+# Path to collect input data
 pool_csv = os.path.join('', 'election_data.csv')
 
 # Read in the CSV file
@@ -62,8 +62,6 @@ with open(output_path, 'w', newline='') as txtfile:
     -------------------------
     Winner: {winner_name}
     -------------------------"""))
-
-
 
     # close txtfile
     txtfile.close()
